@@ -1,6 +1,6 @@
 import Wrapper from "../shared/Wrapper"
 import Image from "next/image"
-import ProgramImage from "@/assets/images/Program Outcome.png"
+import ProgramImage from "@/assets/images/Program-Outcome.png"
 import { GiCheckMark } from "react-icons/gi"
 
 const OutcomePoints = ["Product Ownership", "Freelacing", "Global Marketing by  DAO", "Boosting Economy."];
@@ -19,7 +19,7 @@ const ProgramOutcome = () => (
                         The Outcome for Participants of the Program
                     </h2>
                     <p className="text-slate-600 mt-4 text-lg">
-                        As a graduate of this program, you will own valuable products such as Full-Stack App Templates, AR and VR Experiences, and APIs that are marketed globally by the Panaverse DAO. You will also have the opportunity to offer your services at a rate of $50 per hour, providing a path to financial stability while contributing to the growth of Pakistan's software exports.
+                        As a graduate of this program, you will own valuable products such as Full-Stack App Templates, AR and VR Experiences, and APIs that are marketed globally by the Panaverse DAO. You will also have the opportunity to offer your services at a rate of $50 per hour, providing a path to financial stability while contributing to the growth of Pakistan software exports.
                     </p>
                     <div className="mt-6 gap-x-2 gap-y-4 grid grid-cols-2">
                         {OutcomePoints.map((item, i) => (

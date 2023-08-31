@@ -3,7 +3,7 @@
 import Wrapper from "@/components/shared/Wrapper"
 import QuarterBox from "@/components/shared/QuarterBox"
 import Image from "next/image"
-
+import { MdKeyboardArrowRight } from "react-icons/md"
 // Images import
 import Web3Img from "@/assets/images/metaverse.webp"
 import AiImg from "@/assets/images/ai.webp"
@@ -151,16 +151,14 @@ const SpecializedTracks = () => {
                         <h4 className="text-primary text-lg font-medium">Specialized Program</h4>
                         <h3 className="text-2xl font-bold">{selectedItemData?.header}</h3>
                         <p className="text-lg text-slate-600 mt-2">{selectedItemData?.description}</p>
-                        <button className="text-primary text-xl mt-4 underline flex gap-x-2 items-end">Learn More
-                            <svg className="mb-1.5" width="10" height="13" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.00006 10.0368L6.06801 5.57117L1.09503 0.999994" stroke="#00616C" stroke-width="2" />
-                            </svg>
+                        <button className="text-primary text-xl mt-4 underline flex items-end">Learn More
+                            <MdKeyboardArrowRight />
                         </button>
                         <div className="flex flex-col sm:flex-row gap-4 mt-8">
                             {
                                 selectedItemData?.Quaters.map((item) => (
                                     <QuarterBox
-                                    key={item.number}
+                                        key={item.number}
                                         header={item.header}
                                         description={item.description}
                                         number={item.number}
